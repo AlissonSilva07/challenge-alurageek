@@ -1,7 +1,7 @@
 :root {
-    --cyan: #2DD4BF;
-    --black: #000000;
-    --white: #ffffff;
+    --primary-cyan: #2DD4BF;
+    --main-black: #000000;
+    --main-white: #ffffff;
     --gray-subtext: #64748B;
     --gray-borders: #e5e7eb;
 }

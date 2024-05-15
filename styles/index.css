@@ -13,7 +13,7 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--white);
+    background-color: var(--main-white);
     font-family: "IBM Plex Mono", monospace;
 }
 
@@ -32,4 +32,27 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
     isolation: isolate;
+}
+
+/* Componentes */
+
+.app-header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-black);
+}
+
+.app-header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-header__text {
+    font-size: 32px;
+    color: var(--main-white);
+    font-weight: bold;
 }
