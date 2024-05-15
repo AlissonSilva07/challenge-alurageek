@@ -14,6 +14,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     background-color: var(--white);
+    font-family: "IBM Plex Mono", monospace;
 }
 
 img, picture, video, canvas, svg {
