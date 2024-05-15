@@ -34,7 +34,7 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-/* Componentes */
+/* Header */
 
 .app-header {
     width: 100%;
@@ -56,3 +56,16 @@ p, h1, h2, h3, h4, h5, h6 {
     color: var(--main-white);
     font-weight: bold;
 }
+
+/* Main */
+
+.app-main {
+    width: 100%;
+    padding: 32px 32px;
+}
+
+/* Main - Section Form */
+
+
+/* Main - Section Products */
+/* Section Footer */
