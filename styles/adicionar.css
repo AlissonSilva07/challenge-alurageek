@@ -1,0 +1,91 @@
+@import "./colors.css";
+
+/* css reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--main-white);
+    font-family: "IBM Plex Mono", monospace;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-black);
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/* Header */
+
+.app-header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-black);
+}
+
+.app-header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-header__text {
+    font-size: 32px;
+    color: var(--main-white);
+    font-weight: bold;
+}
+
+/* Main */
+
+.app-main {
+    width: 100%;
+    padding: 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.app-main__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-main__header__cadastrar-btn {
+    background-color: var(--primary-cyan);
+    border: 1px solid var(--main-black);
+    font-weight: bold;
+    padding: 0.5rem;
+}
