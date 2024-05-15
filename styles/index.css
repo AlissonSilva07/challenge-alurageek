@@ -80,11 +80,11 @@ p, h1, h2, h3, h4, h5, h6 {
 .app-main__produtos-area {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
 }
 
 .app-main__produto {
     display: flex;
-    align-items: center;
     gap: 20px;
     padding: 12px;
     background-image: linear-gradient(to bottom, var(--main-black) 40%, var(--main-white) 40%);
@@ -93,7 +93,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .app-main__produto__img {
     width: 120px;
-    height: 140px;
+    height: 100%;
     object-fit: cover;
     box-shadow: 3px 3px var(--primary-cyan);
 }
@@ -101,6 +101,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .app-main__produto__dados {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 18px;
 }
 
@@ -117,6 +118,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .app-main__produto__dados__topo > p:last-child {
     font-weight: bold;
     font-size: 14px;
+    color: var(--primary-cyan);
 }
 
 .app-main__produto__dados__fundo {
