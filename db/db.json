@@ -1,0 +1,25 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "titulo": "Boneco Stormtrooper",
+            "preco": "R$30,00",
+            "descricao": "Boneco divertido de plástico.",
+            "img": "https://images.unsplash.com/photo-1668406337781-aadd418eef3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHN0b3JtdHJvb3BlciUyMGhlYWR8ZW58MHx8MHx8fDA%3D"
+        },
+        {
+            "id": 2,
+            "titulo": "Gameboy Color",
+            "preco": "R$120,00",
+            "descricao": "Console com vários jogos.",
+            "img": "https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FtZWJveXxlbnwwfHwwfHx8MA%3D%3D"
+        },
+        {
+            "id": 3,
+            "titulo": "Chaveiro Dados",
+            "preco": "R$10,00",
+            "descricao": "Feito puramente de madeira.",
+            "img": "https://images.unsplash.com/photo-1624505474107-840f25fbfb96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhdmVpcm98ZW58MHx8MHx8fDA%3D"
+        }
+    ]
+}
