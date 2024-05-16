@@ -15,6 +15,7 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: var(--main-white);
     font-family: "IBM Plex Mono", monospace;
+    position: relative;
 }
 
 img, picture, video, canvas, svg {
@@ -78,6 +79,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .app-main {
     width: 100%;
+    min-height: 760px;
     padding: 32px 32px;
     display: flex;
     flex-direction: column;
@@ -202,6 +204,31 @@ p, h1, h2, h3, h4, h5, h6 {
     color: var(--main-white);
 }
 
-
-
 /* Footer */
+
+.app-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 240px;
+    background-color: var(--main-black);
+    color: var(--main-white);
+}
+
+.app-footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-footer__img {
+    width: 80px;
+}
+
+.app-footer__text {
+    font-size: 20px;
+    color: var(--main-white);
+    font-weight: bold;
+}
