@@ -88,10 +88,18 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .app-main__header__produtos-btn {
-    background-color: var(--primary-cyan);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--main-black);
     border: 1px solid var(--main-black);
+    color: var(--main-white);
     font-weight: bold;
     padding: 0.5rem;
+}
+
+.app-main__header__produtos-btn:hover {
+    filter: brightness(90%);
 }
 
 /* Form */
@@ -134,6 +142,10 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+.app-main__form__buttons__save:hover {
+    filter: brightness(90%);
+}
+
 .app-main__form__buttons__clear {
     width: 100%;
     padding: 0.5rem;
@@ -141,4 +153,8 @@ p, h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--gray-borders);
     font-size: 12px;
     font-weight: bold;
+}
+
+.app-main__form__buttons__clear:hover {
+    filter: brightness(90%);
 }
