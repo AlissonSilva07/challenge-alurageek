@@ -12,7 +12,6 @@ const buildCard = (id, titulo, preco, descricao, img) => {
         <div class="app-main__produto__dados__fundo">
             <p>${descricao}</p>
             <div class="app-main__produto__dados__fundo__grupo">
-                <button class="app-main__produto__dados__fundo__grupo__botao-editar">EDITAR</button>
                 <button class="app-main__produto__dados__fundo__grupo__botao-deletar">DELETAR</button>
             </div>
         </div>
@@ -28,8 +27,16 @@ const listarProdutos = async () => {
 }
 
 const getProdutos = async () => {
-    const produtos = await listarProdutos()
-    produtos.forEach(e => listaProdutos.appendChild(buildCard(e.id, e.titulo, e.preco, e.descricao, e.img)));
+    try {
+        const produtos = await listarProdutos()
+        if (produtos.length < 0) {
+            listaProdutos.innerHTML = `<h2 class="mensagem__vazio">Não existem produtos postados ainda.</h2>`
+        } else {
+            produtos.forEach(e => listaProdutos.appendChild(buildCard(e.id, e.titulo, e.preco, e.descricao, e.img)));
+        }
+    } catch (error) {
+        console.error(error)
+    }
 }
 
 getProdutos()

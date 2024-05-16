@@ -19,6 +19,10 @@ const postProduto = async (id, titulo, preco, descricao, img) => {
             img: img
         })
     })
+
+    if (!conexao.ok) {
+        throw new Error("Não foi possível enviar o vídeo")
+    }
     
     const dados = await conectar.json()
     return dados
@@ -41,9 +45,16 @@ const postProdutos = async (evento) => {
     const descricao = document.querySelector("[data-descricao]").value
     const img = document.querySelector("[data-img]").value
 
-    await postProduto(id, titulo, preco, descricao, img)
+    try {
+        if (!titulo || !preco || !descricao || !img) {
+            alert('Todos os dados devem ser preenchidos!')
+        }
 
-    window.location.href = "../../index.html"
+        await postProduto(id, titulo, preco, descricao, img)
+        window.location.href = "../../index.html"
+    } catch (error) {
+        console.error(error)
+    }    
 }
 
 form.addEventListener("submit", evento => postProdutos(evento))
