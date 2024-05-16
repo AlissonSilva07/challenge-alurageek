@@ -24,10 +24,13 @@
 
     <!-- Form -->
     <main class="app-main">
-        <section class="app-main__form">
-            <form data-form>
-                <h2>Adicionar Produto</h2>
+        <div class="app-main__header">
+            <h2 class="app-main__header__title">Adicionar Produto</h2>
+            <a href="../../index.html" class="app-main__header__produtos-btn">VER PRODUTOS</a>
+        </div>
 
+        <section class="app-main__form-area">
+            <form class="app-main__form-area__form" data-form>
                 <div class="app-main__form__field">
                     <label for="" class="app-main__form__field__label">Nome:</label>
                     <input type="text" class="app-main__form__field__input" placeholder="Nome" data-titulo>
@@ -49,8 +52,8 @@
                 </div>
 
                 <div class="app-main__form__buttons">
-                    <button type="submit" class="app-main__form__buttons__save">Salvar</button>
-                    <button id="btn-limpar" class="app-main__form__buttons__clear">Limpar</button>
+                    <button type="submit" class="app-main__form__buttons__save">SALVAR</button>
+                    <button id="btn-limpar" class="app-main__form__buttons__clear">LIMPAR</button>
                 </div>
 
             </form>

@@ -87,9 +87,58 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
 }
 
-.app-main__header__cadastrar-btn {
+.app-main__header__produtos-btn {
     background-color: var(--primary-cyan);
     border: 1px solid var(--main-black);
     font-weight: bold;
     padding: 0.5rem;
+}
+
+/* Form */
+
+.app-main__form-area__form {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.app-main__form__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-main__form__field__label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.app-main__form__field__input {
+    padding: 0.5rem;
+}
+
+.app-main__form__buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.app-main__form__buttons__save {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--primary-cyan);
+    border: 1px solid var(--main-black);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.app-main__form__buttons__clear {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--main-white);
+    border: 1px solid var(--gray-borders);
+    font-size: 12px;
+    font-weight: bold;
 }
