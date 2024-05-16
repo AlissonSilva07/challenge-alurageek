@@ -35,7 +35,7 @@ const form = document.querySelector("[data-form]")
 const postProdutos = async (evento) => {
     evento.preventDefault()
 
-    const id = gerarID()
+    const id = await gerarID()
     const titulo = document.querySelector("[data-titulo]").value
     const preco = document.querySelector("[data-preco]").value
     const descricao = document.querySelector("[data-descricao]").value
