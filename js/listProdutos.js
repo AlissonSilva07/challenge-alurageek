@@ -29,7 +29,6 @@ const listarProdutos = async () => {
 
 const getProdutos = async () => {
     const produtos = await listarProdutos()
-    console.log(produtos)
     produtos.forEach(e => listaProdutos.appendChild(buildCard(e.id, e.titulo, e.preco, e.descricao, e.img)));
 }
 

@@ -112,12 +112,13 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .app-main__produto__img {
     width: 120px;
-    height: 100%;
+    height: 180px;
     object-fit: cover;
     box-shadow: 3px 3px var(--primary-cyan);
 }
 
 .app-main__produto__dados {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -157,6 +158,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .app-main__produto__dados__fundo__grupo {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 8px;
