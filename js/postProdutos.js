@@ -14,14 +14,14 @@ const postProduto = async (id, titulo, preco, descricao, img) => {
         body: JSON.stringify({
             id: id,
             titulo: titulo,
-            preco: `R$${preco}`,
+            preco: preco,
             descricao: descricao,
             img: img
         })
     })
 
     if (!conexao.ok) {
-        throw new Error("Não foi possível enviar o vídeo")
+        throw new Error("Não foi possível enviar o produto")
     }
     
     const dados = await conectar.json()

@@ -12,6 +12,7 @@ const deletarProdutos = async (id) => {
 const deletar = async (id) => {
     try {
         await deletarProdutos(id)
+        console.log(`O produto de id ${id} foi apagado com sucesso.`)
     } catch (error) {
         console.error(error)
     }
