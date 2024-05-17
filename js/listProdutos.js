@@ -12,7 +12,7 @@ const buildCard = (id, titulo, preco, descricao, img) => {
         <div class="app-main__produto__dados__fundo">
             <p>${descricao}</p>
             <div class="app-main__produto__dados__fundo__grupo">
-                <button class="app-main__produto__dados__fundo__grupo__botao-deletar" onclick="deletar(${id})">DELETAR</button>
+                <button class="app-main__produto__dados__fundo__grupo__botao-deletar">DELETAR</button>
             </div>
         </div>
     </div>`
