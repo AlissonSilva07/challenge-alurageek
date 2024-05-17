@@ -14,7 +14,7 @@ const postProduto = async (id, titulo, preco, descricao, img) => {
         body: JSON.stringify({
             id: id,
             titulo: titulo,
-            preco: preco,
+            preco: `R$${preco}`,
             descricao: descricao,
             img: img
         })
