@@ -58,3 +58,9 @@ const postProdutos = async (evento) => {
 }
 
 form.addEventListener("submit", evento => postProdutos(evento))
+
+const btnLimparForm = document.getElementById("btn-limpar")
+
+btnLimparForm.addEventListener("click", () => {
+    form.reset()
+})
